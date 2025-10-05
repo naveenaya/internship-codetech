@@ -11,12 +11,10 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
-// ✅ Serve index1.html manually
+// Serve main page and static assets
 app.get("/", (req, res) => {
   res.sendFile(join(__dirname, "index1.html"));
 });
-
-// ✅ Serve static files (JS + CSS)
 app.use(express.static(__dirname));
 
 io.on("connection", (socket) => {

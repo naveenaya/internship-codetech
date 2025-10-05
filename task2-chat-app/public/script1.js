@@ -24,4 +24,6 @@ socket.on("chat message", (msg) => {
   li.innerHTML = `<strong>${msg.user}</strong> [${msg.time}]: ${msg.text}`;
   messages.appendChild(li);
   messages.scrollTop = messages.scrollHeight;
+  <><script src="/socket.io/socket.io.js"> </script><script src="script1.js"></script></>
+
 });

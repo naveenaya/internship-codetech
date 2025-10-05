@@ -1,29 +1,52 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f3f3f3;
+  background-color: #f8f9fa;
   text-align: center;
+}
+
+h1 {
+  color: #333;
 }
 
 #messages {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 400px;
+  height: 300px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
 #messages li {
-  background: #d1e7dd;
-  margin: 5px;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
   text-align: left;
 }
 
 form {
   position: fixed;
-  bottom: 10px;
+  bottom: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 5px;
+}
+
+input {
+  width: 300px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #0078ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
 }
